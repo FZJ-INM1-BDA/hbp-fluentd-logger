@@ -24,7 +24,7 @@ class Logger {
     const auth = username !== '' ? `${username}:${password}@` : ''
     const url = `${protocol}://${auth}${host}:${port}/${qs.escape(name)}.${qs.escape(logLevel)}`
     const formData = {
-      json: JSON.stringify(message),
+      json: JSON.stringify({ message }),
     }
     if (callback) {
       request.post({

@@ -27,10 +27,10 @@ const handleRequestCallback = (err, resp, body) => {
 
   if (resp && resp.statusCode >= 400) {
     process.stderr.write(`fluentD logging responded error\n`)
-    console.log(resp)
+    console.log(JSON.stringify(resp))
     process.stderr.write(resp.toString())
     process.stderr.write('\n')
   }
 }
 
-log.emit('info', { hello: 'world', foo: 'bar' }, handleRequestCallback)
+log.emit('info', [{ hello: 'world', foo: 'bar' }, 123], handleRequestCallback)
