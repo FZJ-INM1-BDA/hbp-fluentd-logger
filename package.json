@@ -1,6 +1,6 @@
 {
   "name": "hbp-fluentd-logger",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Thin wrapper for http(s) fluentd logging.",
   "main": "index.js",
   "files": [
