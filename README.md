@@ -1,3 +1,7 @@
+> archived
+>
+> Please use LogRotate and a in_tail input, rather than in_http
+
 # HBP FluentD Logger
 
 A thin wrapper for repeated HTTP(S) calls. Stand in replacement for all `console.log` etc calls to a central logging service. 
